@@ -1,0 +1,49 @@
+body{
+    background-size: cover;
+    background-attachment: fixed;
+    background-image: url('nat.jpg  ');
+}
+#body{
+    margin: 6% 15%;
+    padding: 6% 6%;
+    border-radius: 10px;
+    background-color: aliceblue;
+}
+body footer {
+    margin-top: 5%;
+    vertical-align: middle;
+    font-size: smaller;
+    position: absolute;
+    box-sizing: border-box;
+    left: 0;
+    padding: 0% 1%;
+    width: 100%;
+    background-color: aliceblue;
+}
+#Tituloo{
+    display: inline;
+}
+#titulo{
+    text-align: left;
+
+}
+#titulo1{
+    text-align: right;
+}
+
+#foto{
+    width:300px;
+    height:300px;
+    border-radius:10px;
+    height: auto;
+    margin: auto;
+    display: block;
+}
+#Informacion{
+    text-align: justify;
+    text-align: center;
+}
+#Formacion{
+    text-align: justify;
+    text-align: center;
+}

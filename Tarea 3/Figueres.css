@@ -1,0 +1,35 @@
+body{
+    background-image: url('Bandera\ 1.jpg');
+    background-size: cover;
+    color: #ffffff;
+    background-color: rgb(51, 50, 50);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-blend-mode: multiply;
+    background-attachment: fixed;
+}
+.body{
+    margin: 6% 15%;
+    padding: 6% 6%;
+    border-radius: 10px;
+    background-color: rgb(90, 87, 87);
+}
+.Titulo{
+    display: flex; justify-content: space-around; 
+}
+.Foto{
+    width:300px;
+    height:300px;
+    border-radius:10px;
+    height: auto;
+    margin: auto;
+    display: block;
+}
+.Informacion{
+    text-align: justify;
+    text-align: center;
+}
+.paginas{
+    text-align: justify;
+    text-align: center;
+    font-size: 200%; }

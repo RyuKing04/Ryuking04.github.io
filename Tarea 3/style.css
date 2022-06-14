@@ -1,0 +1,41 @@
+body{
+    background-image: url('Bandera\ 1.jpg');
+    background-size: cover;
+    color: #ffffff;
+    background-color: rgb(51, 50, 50);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-blend-mode: multiply;
+    background-attachment: fixed;
+}
+.Informacion{
+    text-align: justify;
+    text-align: center;
+}
+.tabla{
+    background-color: rgba(43, 42, 42, 0.6);
+    text-align: center;
+    margin-top: 100px;
+    text-decoration: wavy;
+    margin: auto;
+    width: 37%;
+    border-collapse: separate;
+   border-spacing: 5px;
+}
+.votacion{
+    background-color: rgba(43, 42, 42, 0.6);
+    text-align: justify;
+    text-align: center; 
+
+}
+.Lista{
+    background-color: rgba(214, 208, 208, 0.6);
+    text-align: center;
+    margin-top: 100px;
+    text-decoration: wavy;
+    margin: auto;
+    width: 37%;
+    border-collapse: separate;
+   border-spacing: 5px;
+   color: #ffffff;
+}

@@ -6,6 +6,7 @@ body{
     
 }
 .body{
+        overflow: auto;
    margin: 10% 17%;
     padding: 3%;
     border-radius: 10x;

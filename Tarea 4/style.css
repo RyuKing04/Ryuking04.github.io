@@ -1,0 +1,90 @@
+body{
+    font-family: 'Lato', sans-serif;
+    background-image: url(./images/background.png);
+    background-size: cover;
+    background-attachment: fixed;
+    
+}
+.body{
+    margin: 8% 10%;
+    padding: 3%;
+    border-radius: 30px;
+    background-color: rgb(253, 253, 253);
+}
+#banner{
+    height: 250px;
+    width: 100%
+}
+.fondoHeader{
+    position: relative;
+    text-align: center;
+}
+#TextoHeader{
+    font-weight: bold;
+    color: forestgreen;
+    font-size: 80px;
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    padding-left: 20px;
+}
+nav{
+    background-color: forestgreen;
+  }
+  nav ul{
+    margin: 0;
+    padding: 0%;
+}
+nav a{
+    text-decoration:none;
+    color: inherit;
+    font-size:14px;
+    } 
+    nav li{
+    display:inline-block;
+    width:10%;
+    padding:5px 10px;
+    border-right:1px solid #fff;
+    text-align:center;
+    color:#fff;
+    }
+    nav li:hover{
+    background-color:#fff;
+    color:#000;
+    }
+    img {
+        float: left;
+        margin-right: 15px;
+    }
+    
+    img[alt|="árbol"] {
+        height: 3em;
+        margin: 5px;
+    }
+    article > h2 {
+        color: #7ba617;
+    }
+    
+    main > h3 {
+        color: #8eb746;
+    }
+    
+    .Todo{
+        display: flex;
+        column-gap: 20px;
+        line-height: 1.5em;
+        width: 880px;
+    }
+    footer {
+        background-color: #488000;
+        text-align: center;
+        color: #FFF;
+        height: 35px;
+        width: 880px;
+        margin: 0px;
+    }
+    
+    footer > a {
+        color: #FFF;
+        line-height: 2em;
+    }

@@ -1,0 +1,274 @@
+﻿@font-face { 
+  font-family: Yanone Kaffeesatz; 
+    src: url('../fonts/YanoneKaffeesatz-Regular.eot'); 
+    src: local("Yanone Kaffeesatz"), url('../fonts/YanoneKaffeesatz-Regular.ttf'); 
+} 
+
+
+/* FORMATEAR TABLA CON SCROLL, SELECCION Y COLUMNAS FIJAS*/
+
+    .scroll {
+        width: 100%;
+        text-align: left;
+        min-width: 610px;
+    }
+
+    .scroll caption {
+        height: 35px;
+        text-align: center;
+        vertical-align: central;
+        padding: 7px;
+        border-bottom: 1px solid #ddd;
+        background-color: #53C7FD;
+        font: 190% 'Yanone Kaffeesatz',helvetica,arial,verdana,sans;
+        color: #FFF;
+    }
+
+
+    .scroll tr {
+        height:70px;
+        padding-top: 10px;
+    }
+
+    .scroll tbody {
+        height: 300px;
+        overflow-y: auto;
+        overflow-x: hidden;
+    }
+
+
+    .scroll th, .scroll td, .scroll tr, .scroll thead, .scroll tbody {
+        display: block;
+    }
+
+    .scroll td, .scroll th {
+        float: left;
+    }
+
+    .scroll td:nth-child(1),
+    .scroll th:nth-child(1) {
+            width: 20%;
+        }
+
+    .scroll td:nth-child(2),
+    .scroll th:nth-child(2) {
+            width: 10%;
+            float: left;
+        }
+
+    .scroll td:nth-child(3),
+    .scroll th:nth-child(3) {
+            width: 10%;
+            float: left;
+        }
+
+    .scroll td:nth-child(4),
+    .scroll th:nth-child(4) {
+            width: 40%;
+            float: left;
+        }
+
+    .scroll td:nth-child(5),
+    .scroll th:nth-child(5) {
+            width: 20%;
+            float: left;
+        }
+
+    /* some colors */
+    .scroll thead {
+        background-color: #E5017D;
+        color: white;
+    }
+
+    .scroll thead tr{
+        height:20px;
+        padding-top: 10px;
+    }
+
+    .scroll tfoot {
+        background-color: #E5017D;
+        color: white;
+    }
+
+    .scroll tfoot tr{
+        height:20px;
+        padding-top: 10px;
+    }
+
+    .scroll tr:nth-child(even) {
+        background-color: #C8EAE9;
+    }
+
+    .scroll tbody tr:hover {
+        background-color:#80E804;
+        color:white;
+        font-size:large;
+    }
+  
+
+/* F I N  == > FORMATEAR TABLA CON SCROLL, SELECCION Y COLUMNAS FIJAS*/
+
+
+
+    .imgTabla{
+
+        margin: 0px 0px 0px 0px; 
+        float:inherit;
+        padding: 0px 0px 0px 0px ; 
+        border: 1px solid #ddd;
+        height:65px;
+        width:80px;
+    }
+
+
+/* FORMATEAR TABLA CON SELECCION*/
+
+.seleccion{
+    width: 100%;
+    align-items:center;
+}
+
+.seleccion caption {
+    height: 35px;
+    text-align: center;
+    vertical-align: central;
+    padding: 7px;
+    border-bottom: 1px solid #ddd;
+    background-color: #53C7FD;
+    font: 190% 'Yanone Kaffeesatz',helvetica,arial,verdana,sans;
+    color: #FFF;
+}
+
+.seleccion th {
+    height: 5px;
+    text-align: left;
+    vertical-align: central;
+    padding: 7px;
+    border-bottom: 1px solid #ddd;
+    background-color:#E5017D;
+    color: white;
+}
+
+.seleccion td {
+    height: 5px;
+    vertical-align: central;
+    padding: 7px;
+    text-align: left;
+    border-bottom: 1px solid #ddd;
+}
+
+.seleccion .tdCentrado {
+    height: 5px;
+    vertical-align: central;
+    padding: 1px;
+    vertical-align: central;
+    align-content:center;
+    border-bottom: 1px solid #ddd;
+}
+
+.seleccion tr:nth-child(even) {
+    background-color:#C8EAE9;
+}
+
+.seleccion tbody tr:hover {
+    background-color:#80E804;
+    color:white;
+    font-size:large;
+}
+
+
+.seleccion tfoot {
+    height: 15px;
+    text-align: center;
+    vertical-align: central;
+    padding: 7px;
+    border-bottom: 1px solid #ddd;
+    background-color: #E5017D;
+    color: white;
+}
+
+/* FIN == > FORMATEAR TABLA CON SELECCION*/
+
+
+/* FORMATEAR TABLA PLANA*/
+
+.plano table {
+    border-collapse:collapse;
+    align-self:center;
+}
+
+.plano table, .plano td, .plano th{
+    border: 2px solid black;
+}
+
+/* FIN == > FORMATEAR TABLA PLANA*/
+
+/*FORMATEAR TABLA PLANA*/
+
+    .extra {
+        width: 100%;
+        border-collapse: collapse;
+        text-align: left;
+        color: #606060;
+    }
+
+    .extra caption {
+        height: 35px;
+        text-align: center;
+        vertical-align: central;
+        padding: 7px;
+        border-bottom: 1px solid #606060;
+        background-color: #E5017D;
+        font: 190% 'Yanone Kaffeesatz',helvetica,arial,verdana,sans;
+        color: white;
+    }
+
+    .extra td {
+        vertical-align: middle;
+        padding: 0.5em;
+    }
+
+    .extra thead tr td {
+        background-color: White;
+        vertical-align: middle;
+        padding: 0.6em;
+        font-size: 0.8em;
+    }
+
+    .extra thead tr th,
+    .extra tbody tr.separator {
+        padding: 0.5em;
+        background-color:#E5017D;
+        color: white;
+        background: -webkit-gradient(linear, left top, left bottom, from(#909090), to(#ababab));
+        background: -moz-linear-gradient(top, #909090, #ababab);
+
+    }
+
+    .extra tbody tr:nth-child(odd) {
+        background-color: white;
+    }
+
+    .extra tbody tr:nth-child(even) {
+        background-color: #53C7FD;
+    }
+
+    .extra tbody tr:last-child {
+        border-bottom: solid 1px #404040;
+    }
+
+    .extra tbody tr:hover {
+        cursor: pointer;
+        background-color:#80E804;
+        color:white;
+        background: -webkit-gradient(linear, left top, left bottom, from(#909090), to(#ababab));
+        background: -moz-linear-gradient(top, #909090, #ababab);
+    }
+
+    .extra tfoot {
+        text-align: center;
+        color: #303030;
+        text-shadow: 0 1px 1px rgba(255,255,255,0.3);
+    }
+
+/* FIN == > FORMATEAR TABLA EXTRA*/

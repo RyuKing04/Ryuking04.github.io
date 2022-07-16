@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="css/style.css" /> 
+   
+    <title>JavaScript</title>
+</head>
+<body>
+    <header>
+
+    </header>
+    <main>
+<div class="main">
+  <h1>DOM</h1>
+  <h2>Encontrar elementos con el id de HTML</h2>
+  <p>getElementById</p>
+  <p>Busca el elemento HTML con el id id. Si no, devuelve</p>
+  <p id="prueba1"> </p>
+  <hr>
+   <h2>Encontrar elementos HTML por nombre de las etiquetas</h2>
+   <p>getElementByTagName</p>
+   <p>Esto es un metodo para encontrar todos los H1</p>
+   <button id="prueba2">Contador</button>
+   <hr>
+   <h2>Encontrar elementos por el nombre de la clase</h2>
+   <p>getElementByClassName</p>
+   <p>Encontrar elementos HTML por nombre de clase (El que tenga las clase Ejemplo color será de dicho color)</p>
+   <div class="prueba3">
+     <p>Soy un div</p>
+   </div>
+   <br>
+   <div class="prueba color">
+     <p>Soy un div</p>
+   </div>
+   <br>
+   <hr>
+   <h2>Encontrar elementos HTML por selector CSS</h2>
+   <p>getElementByCss</p>
+   <p class="azul">Soy un texto </p>
+   <hr>
+
+   <h2>Encontrar elementos HTML por colecciones de objetos HTML</h2>
+   <p>getElementByHtml</p>
+   <span>Soy un span</span>
+   <br>
+   <span>Soy un span</span>
+   <br>
+   <span>Soy un span</span>
+   <br>
+   <button id="prueba4">Cambiar el span</button>
+ </div>
+ <div class="main">
+    <h1> Control de flujo y manejo de errores</h1>
+    <h2>If y Else para ver que las palabras cambien de color</h2>
+    <p id="prueba5">Soy un texto</p>
+    <input type="checkbox" name="prueba6" id="prueba6">
+    <label for="prueba6"> Color rojo</label>
+    <hr>
+    <h2>Switch Case:</h2>
+    <button id="prueba7">Presione para saber qué dia de la semana es</button>
+    <hr>
+    <h2>Try/Catch/Throw y Objeto Error</h2>
+      <p>Digite un número entre 30 y 100</p>
+      <input id="input2" type="text">
+      <button type="button" onclick="myFunction()">Test Input</button>
+      <p id="mensaje"></p>
+ </div>
+ <div class="main">
+    <h1>Iteraciones</h1>
+    <h2>For (Revisar consola)</h2>
+    <p id="demo"></p>
+    <button id="prueba8">Ciclo for</button>
+<hr>
+<h2>While (Itera siempre y cuando se cumpla una condicion)</h2>
+<button id="prueba9">Contar hasta 10 condicionalmente</button>
+<p id="prueba10"></p>
+<hr>
+<h2>Do While</h2>
+      <button id="prueba11">Contar mientras que el número sea menor a 5</button>
+      <p id="prueba12"></p>
+ </div>
+ <div class="main">
+  <h1>Funciones (Métodos)</h1>
+  <h2>Definir Funciones</h2>
+      <div>
+        <p>// se escribe function como palabra reservada de JS, luego el nombre de nuestra función
+          y un paréntesis con los parámetros necesarios</p>
+        <p>// se abre el cuerpo con corchetes y se escribe el nombre de la función</p>
+        <p>function NombreDeFuncion(n Parámetros){</p>
+        <p>Console.log("Diseño Web");</p>
+        <p>}</p>
+        <h2>Llamar Funciones</h2>
+
+        <p>// se escribe el nombre de la función en el contexto necesario, por ejemplo para obtener
+          un valor</p>
+        <p>var imc = CalcularIMC(60kg, 185cm);</p>
+        <p>// Ahora la variable imc valdrá lo que la función retorne</p>
+</div>
+
+<div class="main">
+  <h1>Expresiones y Operadores</h1>
+  <h2>Asignación y Comparación</h2>
+      <p>En JavaScript tenemos tres formas de usar el símbolo "="</p>
+      <p>La primera es para asignar un valor a una variable (Solo se usa un signo de igual)</p>
+      <div>var x = 1;</div>
+      <p>La segunda es como comparador, se puede comparar 2 variables ignorando el tipo de dato (==) o tomando en cuenta
+        si son dek mismo tipo (===)</p>
+        <h2>Operadores aritméticos</h2>
+        <table>
+          <tbody>
+            <tr>
+              <th style="width:50%">Operador</th>
+              <th>Descripción</th>
+            </tr>
+            <tr>
+              <td>+</td>
+              <td>Suma</td>
+            </tr>
+            <tr>
+              <td>-</td>
+              <td>Resta</td>
+            </tr>
+            <tr>
+              <td>*</td>
+              <td>Multiplicación</td>
+            </tr>
+            <tr>
+              <td>**</td>
+              <td>Exponente</td>
+            </tr>
+            <tr>
+              <td>/</td>
+              <td>Division</td>
+            </tr>
+            <tr>
+              <td>%</td>
+              <td>Division Residual</td>
+            </tr>
+            <tr>
+              <td>++</td>
+              <td>Incrementar</td>
+            </tr>
+            <tr>
+              <td>--</td>
+              <td>Decrementar</td>
+            </tr>
+          </tbody>
+        </table>
+        <br>
+        <input type="text" id="valor1">
+      <input type="text" id="valor2">
+      <button onclick="Sumar()">Sumar</button>
+      <button onclick="Restar()">Restar</button>
+
+      <h2>Operadores Lógicos</h2>
+      <p>Existen 3 Operadores lógicos principales en JS; el AND (&&), OR (||) y el NOT (!)</p>
+      <p>Ejemplos práctico:</p>
+      <input id="chk1" type="checkbox">
+      <input id="chk2" type="checkbox">
+      <button onclick="AND()">Probar AND (Retorna true si ambos checkbox estan marcados)</button>
+      <button onclick="OR()">Probar OR (Retorna true si uno de los checkbox está marcado)</button>
+      <button onclick="NOT()">Probar NOT (Retorna false si ambos checkbox estan marcados)</button>
+</div>
+<div class="main">
+  <h1>Números y Fechas</h1>
+  <h2>Objeto Number</h2>
+      <p>Number es un objeto primitivo envolvente que permite representar y manipular valores numéricos cómo 37 o -9.25.
+        El constructor Number contiene constantes y métodos para trabajar con números. Valores de otro tipo pueden ser
+        convertidos a números usando la función Number().</p>
+        <div>var b = Number('123'); <span>// b === 123 es true porque aunque es una string, fue
+          covertida a número</span></div>
+
+          <h2>Objeto Math</h2>
+      <p>Math es un objeto incorporado que tiene propiedades y métodos para constantes y funciones matemáticas. No es un
+        objeto de función.</p>
+      <button id="btnE" onclick="AlertE()">Desplegar Math.E(Constante de Euler, la base de los logaritmos
+        naturales)</button>
+      <button id="btnPI" onclick="AlertPI()">Desplegar Math.PI(Ratio de la circunferencia de un circulo respecto a su
+        diámetro)</button>
+      <button id="btnSQRT" onclick="AlertRaiz()">Desplegar Math.SQRT2(Raíz cuadrada de 2)</button>
+      <h2>Objeto Date</h2>
+      <p>Representa, en síntesis, fechas, aunque tiene diferentes funciones muy útiles</p>
+      <div>var hoy = new Date();</div>
+      <br>
+      <button onclick="AlertToday()">Desplegar fecha actual</button>
+      <button onclick="AlertDAY()">Desplegar día de la semana (Por número)</button>
+      <button onclick="AlertMonth()">Desplegar mes (Por número)</button>
+      <button onclick="AlertYear()">Desplegar año</button>
+</div>
+<div class="main">
+  <h1>Formateo de Texto</h1>
+  <h2>Cadenas Literales:</h2>
+      <p>literales son cadenas literales que habilitan el uso de expresiones incrustadas. Con ellas, es posible utilizar
+        cadenas de caracteres de más de una línea, y funcionalidades de interpolación de cadenas de caracteres.</p>
+        <button id="btnCadena" onclick="NoCadenasLiterales()">Imprimir en consola lineas sin cadenas literales</button>
+      <button id="btnCadenaL" onclick="CadenasLiterales()">Imprimir en consola lineas con cadenas literales</button>
+<hr>
+      <h2>Objeto String</h2>
+      <p>Los métodos del objeto String nos permiten interactuar con variables que contengan texto entre comillas para
+        conseguir diferentes resultados, ejemplo:</p>
+      <p id="Mayus">soy un párrafo</p>
+      <button id="UpperBtn" onclick="Mayuscula()">Convertir a mayúscula</button>
+</div>
+<div class="main">
+  <h1>Colecciones Indexadas</h1>
+  <h2>Arreglos:</h2>
+  <p>Los arrays son objetos similares a una lista cuyo prototipo proporciona métodos para efectuar operaciones de
+    recorrido y de mutación. Tanto la longitud como el tipo de los elementos de un array son variables. Dado que la
+    longitud de un array puede cambiar en cualquier momento, y los datos se pueden almacenar en ubicaciones no
+    contiguas, no hay garantía de que los arrays de JavaScript sean densos; esto depende de cómo el programador
+    elija usarlos. En general estas características son cómodas, pero si, en su caso particular, no resultan
+    deseables, puede considerar el uso de arrays con tipo.</p>
+  <p>Defino el siguiente array:</p>
+  <p>var nombres = ["Alfredo", "Juan"];</p>
+  <button id="arraybtn" onclick="PrintArray()">Desplegar contenido</button>
+  <p id="arrayR"></p>
+  <h2>Arreglos Tipados:</h2>
+      <p>Los arreglos tipados en JavaScript son objetos similares a arreglos y proporcionan un mecanismo para acceder a
+        datos binarios sin procesar. Como ya sabes, los objetos Array crecen y se encogen dinámicamente y pueden tener
+        cualquier valor de JavaScript. Los motores de JavaScript realizan optimizaciones para que estos arreglos sean
+        rápidos. Sin embargo, a medida que las aplicaciones web se vuelven cada vez más poderosas, agregando
+        características como manipulación de audio y video, acceso a datos sin procesar usando WebSockets (en-US), y así
+        sucesivamente, ha quedado claro que hay momentos en los que sería útil para que el código JavaScript pueda
+        manipular rápida y fácilmente datos binarios sin procesar en arreglos tipados.</p>
+      <h3>Ejemplo:</h3>
+      <div>
+        <p>var buffer = new ArrayBuffer(16);</p>
+        <p>if (buffer.byteLength === 16) {</p>
+        <p style="margin-left: 1em;">alert("Sí, son 16 bytes");</p>
+        <p>} else {</p>
+        <p style="margin-left: 1em;">alert("¡Oh no, es del tamaño incorrecto!");</p>
+        <p>}</p>
+      </div>
+      <br>
+      <button id="arrayTbtn" onclick="PrintTArray()">Probar código</button>
+</div>
+    </main>
+    <footer>
+        
+    </footer>
+<script src="js/script.js"></script>
+</body>
+</html>

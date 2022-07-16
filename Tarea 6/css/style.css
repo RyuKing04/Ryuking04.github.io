@@ -1,0 +1,12 @@
+body{
+    background-color: antiquewhite;
+}
+.main{
+    display: block;
+    border: solid 2px black;
+    margin: 30px 30px;
+    padding: 10px;
+}
+table, th, td {
+    border: 1px solid;
+  }

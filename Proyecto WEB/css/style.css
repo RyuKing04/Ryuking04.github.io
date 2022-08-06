@@ -1,0 +1,63 @@
+
+.navbar-collapse{
+    color: #FFF;
+    
+}
+.contenedor{
+    display: grid;
+    justify-content: space-around;
+}
+.ropa{
+    text-align: center;
+    margin: 10px;
+}
+.ropa a{
+    color: rgb(174, 70, 143);
+}
+
+.ropa a:hover{
+    color: #7BDFF2;
+    text-decoration: none;
+}
+
+.imgRopa{
+    border-radius: 10px;
+    
+}
+
+.d-block{
+    border-radius: 10px;
+}
+    
+
+@media (min-width:520px) {
+    .imagenes .contenedor{
+        grid-template-columns: repeat(2, 50%);
+        width: 100%;
+        height: 100%;
+    }
+}
+
+@media (min-width:728px) {
+    .imagenes .contenedor{
+        grid-template-columns: repeat(3, 33.3%);
+        width: 100%;
+        height: 100%;
+    }
+}
+
+@media (min-width:728px) {
+    .imagenes .contenedor{
+        grid-template-columns: repeat(3, 25%);
+        width: 100%;
+        height: 100%;
+    }
+}
+
+@media (min-width:1024px) {
+    .imagenes .contenedor{
+        grid-template-columns: repeat(3, 25%);
+        width: 100%;
+        height: 100%;
+    }
+}

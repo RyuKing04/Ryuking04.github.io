@@ -1,0 +1,66 @@
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title>Happy Eart Bienes Raíces</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <link href="css/home.css" rel="stylesheet" type="text/css" />
+    <link href="css/forms.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+    <div id="container">
+        <header id="header">
+            <nav class="menu">
+                <ul>
+                    <li class="btn_1"><a href="home.html">Home</a></li>
+                    <li class="btn_2"><a href="weather.html">Tiempo</a></li>
+                    <li class="btn_3"><a href="#">Catálogo</a></li>
+                    <li class="btn_4"><a href="#">Servicios</a></li>
+                    <li class="btn_5"><a href="contacto.html">Contáctenos</a></li>                </ul>
+            </nav>
+            <img src="images/logo.jpg" alt="" name="logo" width="251" height="45" id="logo" />
+        </header>
+
+        <div id="main">
+            <form class="contact_form" action="#" id="contact_form" method="post">
+                <div>
+                    <ul>
+                        <li>
+                            <h2>Contactos</h2>
+                            <span class="required_notification">* Datos requeridos</span>
+                        </li>
+                        <li>
+                            <label for="name">Nombre:</label>
+                            <input type="text" placeholder="John Doe" required=required />
+                        </li>
+                        <li>
+                            <label for="email">Email:</label>
+                            <input type="email" name="email" placeholder="info@developerji.com" required=required />
+                            <span class="form_hint">Formato correcto: "name@something.com"</span>
+                        </li>
+                        <li>
+                            <label for="website">Sitio web:</label>
+                            <input type="url" name="website" placeholder="http://developerji.com" required=required pattern="(http|https)://.+" />
+                            <span class="form_hint">Formato correcto: "http://developerji.com"</span>
+                        </li>
+                        <li>
+                            <label for="message">Mensaje:</label>
+                            <textarea name="message" cols="40" rows="6" required=required></textarea>
+                        </li>
+                        <li>
+                            <button class="submit" type="submit">Enviar mensaje</button>
+                        </li>
+                    </ul>
+                </div>
+            </form>
+        </div>
+
+        <footer id="footer">
+            <p>
+                <a href="home.html">Home</a> | <a href="weather.html">Tiempo</a> | <a href="#">Catálogo</a> | <a href="#">Servicios</a> | <a href="contacto.html">Contáctenos</a><br />
+                Copyright &copy; Real State Happy Eart
+            </p>
+        </footer>
+    </div>
+
+</body>
+</html>

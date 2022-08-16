@@ -1,0 +1,68 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title>Car Online</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />
+    <link href="css/style.css" type="text/css" rel="stylesheet" />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+    <script src="scr/vehiculos.js"></script>
+    <script src="scr/jquery.js"></script>
+</head>
+<body onload="mostrarTodo()">
+    <div id="main">
+        <a href="#"><img src="images/logo.gif" alt="" border="0" class="logo" /></a>
+        <ul class="topcar">
+            <li><a href="#"><img src="images/img01.jpg" alt="" width="330" height="190" border="0" /></a></li>
+        </ul>
+        <ul class="topnav">
+            <li><a href="home.html">Home</a> | </li>
+            <li><a href="vehiculos.html">Vehículos</a> |</li>
+            <li><a href="#">Reservas</a> |</li>
+            <li><a href="#">Calculadora</a> |</li>
+            <li><a href="#">Contáctenos</a></li>
+        </ul>
+
+        <div id="header"> </div>
+        <div id="visor">
+            <div id="imgView">
+                <figure>
+                    <img id="imgVista" src="" width="490" height="300" alt="No Disponible" />
+                </figure>
+            </div>
+
+            <div id="infoCar">
+                <br />
+                <label >Tipo Vehículo :</label>
+                <select id="tipoVehiculo" name="tipoVehiculo" onchange="mostrarTodo()">
+                    <option id="COM" value="Compacto" selected="selected">Compacto</option>
+                    <option id="MED" value="Mediano">Mediano</option>
+                    <option id="4WD" value="Terreno">Todo Terreno</option>
+                    <option id="FAM" value="Familiar">Familiar</option>
+                </select>
+                <br />
+                <br />
+                <p id="infTCar" align="justify">
+                    
+                </p>
+
+
+            </div>
+            
+            <div id="listaImge">
+                <img class="imagelist" id="img1" src="" onclick="mostrarImagen(1)" width ="150" height="110" alt="No Disponible" />
+                <img class="imagelist" id="img2" src="" onclick="mostrarImagen(2)" width="150" height="110" alt="No Disponible" />
+                <img class="imagelist" id="img3" src="" onclick="mostrarImagen(3)" width="150" height="110" alt="No Disponible" />
+            </div>
+
+
+        </div>
+
+
+        <div class="foot">
+            Copyright Diseño de Aplicaciones Web (UTN)<br />
+            Plantilla Diseñada por <a href="http://www.free-css-templates.com/">Free CSS Templates</a>
+        </div>
+        <br class="spacer" />
+    </div>
+</body>
+</html>

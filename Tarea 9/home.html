@@ -1,0 +1,93 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title>Car Online</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />
+    <link href="css/style.css" type="text/css" rel="stylesheet" />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+    <script src="scr/calculos.js"></script>
+    <script src="scr/countries.js"></script>
+</head>
+<body>
+    <div id="main">
+        <a href="#"><img src="images/logo.gif" alt="" border="0" class="logo" /></a>
+        <ul class="topcar">
+            <li><a href="#"><img src="images/img01.jpg" alt="" width="330" height="190" border="0" /></a></li>
+        </ul>
+        <ul class="topnav">
+            <li><a href="home.html">Home</a> | </li>
+            <li><a href="vehiculos.html">Vehículos</a> |</li>
+            <li><a href="#">Reservas</a> |</li>
+            <li><a href="#">Calculadora</a> |</li>
+            <li><a href="#">Contáctenos</a></li>
+        </ul>
+
+        <div id="header"> </div>
+        <div id="body">
+            <div class="left">
+                <img src="images/welcome.gif" alt="" /><br />
+                <h4 id="tituloNombre">Best Car Rental</h4>
+                <p align="justify">
+                    Es la mejor compañía de alquiler de vehículos, nos enfocamos en el servicio y la satisfacción del cliente brindando confiabilidad y los mejores precios del mercado nacional, sin costos ocultos y con la mayor claridad.
+                </p>
+                <p align="justify">
+                    Nuestros vehículos son de las marcas más reconocidas del mercado y cuentan con una antigúedad no mayor a 24 meses de uso y trabajamos con la mejoras compañías de seguros del mercado. Ofrecemos vehículos: compactos, medianos, todo terreno y familiares, con la mejor tarifa diaria del mercado, en nuestro sitio usted podrá calcular el costo exacto del vehículo y podrá ver el detalle de los vehículos que ofrecemos, tenga en cuenta que como mínimo la renta es de 3 días hasta un año como máximo y la tarifa diaria está en función de la cantidad de días que desea alquilar y el tipo de vehículo. Tenga en cuenta que para alquilar el veh+iculo deberá dejar un depósito proporcional al valor total del alquiler y del tipo de vehículo que desea rentar.
+                </p>
+                <p align="justify">
+                    Los precios renta son calculados en dólares estadounidenses ($).
+                </p>
+            </div>
+            <form action="#" method="get" class="search">
+                <img src="images/carbooking.gif" alt="" class="head" /><br />
+
+                <label for="fechaRetiro">Fecha Retiro :</label>
+                <input class="fechas" type="date" id="retiro" name="fechaRetiro" />
+
+                <label for="fechadevolucion">Fecha Devolución :</label>
+                <input class="fechas" type="date" id="dev" name="fechadevolucion" />
+
+                <label>Nacionalidad :</label>
+                <select class="combos" id="nacionalidad" name="nacionalidad"></select>
+                
+                <label id="lblTipoV">Tipo Vehículo :</label>
+                <select class="combos" id="tipoVehiculo" name="tipoVehiculo">
+                    <option id="COM" value="10.45" selected="selected">Compacto</option>
+                    <option id="MED" value="15.50">Mediano</option>
+                    <option id="4WD" value="25.25">Todo Terreno</option>
+                    <option id="FAM" value="20.30">Familiar</option>
+                </select>
+                
+                <label id="lblSeguro" onclick="MensajeTipoSeguro()">Seguro :</label>
+                <select class="combos" id="seguro" name="seguro">
+                    <option id="PBO" value="5.45" selected="selected">Protección Básica Obligatoria (PBO)</option>
+                    <option id="PED" value="9.50">Protección Extendida de Daños(PED)</option>
+                    <option id="PGM" value="11.25">Protección Gasto Médicos(PGM)</option>
+                </select>
+
+                <label for="dias">Días :</label>
+                <input class="resultados" id="numeroDias" type="text" name="dias" readonly=readonly />
+
+                <label for="td">Tarifa Diaria :</label>
+                <input class="resultados" id="tarifaDiaria" type="text" name="td" readonly=readonly />
+
+                <label for="totalPagar">Total Pagar :</label>
+                <input class="resultados" id="total" type="text" name="totalPagar" readonly=readonly />
+
+                <input type="button" class="botones" onclick="btnCalcular()" value="Calcular"/>
+                <input type="button" class="botones" onclick="guardarMemoriaLocal(document.getElementById('retiro').value, document.getElementById('dev').value, document.getElementById('nacionalidad').value, document.getElementById('tipoVehiculo').value, document.getElementById('seguro').value)" value="Guardar"/>
+
+            </form>
+
+            <h3 class="tech"></h3>
+
+            <p class="brd"></p>
+            <p class="footer"><a href="home.html">Home</a> | <a href="vehiculos.html">Vehículos</a> | <a href="#">Reservas</a> | <a href="#">Calculadora</a> | <a href="#">Contáctenos</a></p>
+        </div>
+        <div class="foot">
+            Copyright Diseño de Aplicaciones Web (UTN)<br />
+            Plantilla Diseñada por <a href="http://www.free-css-templates.com/">Free CSS Templates</a>
+        </div>
+        <br class="spacer" />
+    </div>
+</body>
+</html>
